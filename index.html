@@ -1,10 +1,61 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
-    <title></title>
+    <title>Elliott Martyn Chick</title>
   </head>
   <body>
-    <h1>TEST</h1>
+    <nav>
+      <div class="container">
+
+        <div class="nav-left">
+          <a href="">Elliott Martyn Chick</a>
+        </div>
+
+        <div id="nav-links">
+          <a href="#me">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#hobbies">Hobbies</a>
+          <a href="#education">Education</a>
+        </div>
+
+        <a href="javascript:void(0)" class="burger" onclick="myFunction()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+      </div>
+    </nav>
+
+    <section class="detail">
+      <div class="container">
+        <img src="images/Elliott-1.jpg" class="profile-image">
+        <div class="about-container">
+          <h1>Elliott Martyn Chick</h1>
+          <h2>Junior Full Stack Web Developer</h2>
+          <p>London, United Kingdom</p>
+          <p>
+            <a href="mailto:elliott.chick@gmail.com">elliott.chick@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      function myFunction() {
+        var x = document.getElementById("nav-links");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+          } else {
+          x.style.display = "flex";
+          }
+        }
+    </script>
+
   </body>
 </html>
