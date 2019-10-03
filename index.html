@@ -33,7 +33,7 @@
       </div>
     </nav>
 
-    <section class="detail">
+    <section id="me">
       <div class="container">
         <img src="images/Elliott-1.jpg" class="profile-image">
         <div class="about-container">
@@ -47,7 +47,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section id="about">
       <div class="container">
         <h2>About Me</h2>
         <p>
@@ -56,7 +56,7 @@
       </div>
     </section>
 
-    <section class="skills">
+    <section id="skills">
       <div class="container">
         <h2>Skills</h2>
         <div class="skill-icons">
@@ -112,7 +112,7 @@
       </div>
     </section>
 
-    <section class="experience">
+    <section id="experience">
       <div class="container">
         <h2>Experience</h2>
         <p>
@@ -121,7 +121,7 @@
       </div>
     </section>
 
-    <section class="hobbies">
+    <section id="hobbies">
       <div class="container">
         <h2>Hobbies</h2>
         <p>
@@ -130,10 +130,10 @@
       </div>
     </section>
 
-    <section class="education">
+    <section id="education">
       <div class="container">
         <h2>Education</h2>
-        <p>
+        <p id="test">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
@@ -148,6 +148,26 @@
           x.style.display = "flex";
           }
         }
+
+      const a=document.querySelectorAll('#nav-links a')
+
+      a.forEach(e =>{
+        e.addEventListener('click', e=>{
+
+        if(!e.target.hash)
+          return window.scrollTo({top: 0, behavior: 'smooth'})
+
+        const c=document.getElementById(e.target.hash.substr(1))
+
+        console.log(c)
+
+        c.scrollIntoView({behavior: 'smooth'})
+
+
+
+        })
+      })
+
     </script>
 
   </body>
