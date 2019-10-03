@@ -140,30 +140,31 @@
     </section>
 
     <script type="text/javascript">
+
+      const a=document.querySelectorAll('#nav-links a')
+      const x = document.getElementById("nav-links");
+
+      a.forEach(e =>{
+        e.addEventListener('click', e=>{
+
+        const
+         c=document.getElementById(e.target.hash.substr(1))
+        c.scrollIntoView({behavior: 'smooth'})
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+          }
+
+        })
+      })
+
       function myFunction() {
-        var x = document.getElementById("nav-links");
+        const x = document.getElementById("nav-links");
         if (x.style.display === "flex") {
           x.style.display = "none";
           } else {
           x.style.display = "flex";
           }
         }
-
-      const a=document.querySelectorAll('#nav-links a')
-
-      a.forEach(e =>{
-        e.addEventListener('click', e=>{
-
-        if(!e.target.hash)
-          return window.scrollTo({top: 0, behavior: 'smooth'})
-
-
-        const
-         c=document.getElementById(e.target.hash.substr(1))
-        c.scrollIntoView({behavior: 'smooth'})
-
-        })
-      })
 
     </script>
 

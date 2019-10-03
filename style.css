@@ -12,7 +12,8 @@ body {
 
 nav {
   background-color: #333333;
-  position: relative;
+  position: fixed;
+  top: 0;
   width: 100%;
   height: 50px; }
   nav .nav-left {
@@ -27,6 +28,7 @@ a {
   color: #fafafa; }
 
 #me {
+  margin-top: 50px;
   background-color: #4c4c4c;
   display: flex;
   flex-direction: column; }
