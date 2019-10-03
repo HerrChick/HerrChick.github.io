@@ -51,30 +51,30 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; }
-    .skills .container .skill-icons i {
+    .skills .container .skill-icons .icon-container i {
       border: 5px solid darkorange;
       background-color: darkorange;
       border-radius: 5px;
       text-align: center;
       font-size: 100px;
       margin: 14px 30px; }
-    .skills .container .skill-icons p {
+    .skills .container .skill-icons .icon-container p {
       opacity: 0; }
-      .skills .container .skill-icons p.hover {
-        opacity: 1 !important;
-        margin: 0px 30px 30px 30px;
-        border: 10px solid darkorange;
-        border-radius: 0px 0px 5px 5px;
-        background-color: darkorange;
-        text-align: center; }
       @media only screen and (max-width: 768px) {
-        .skills .container .skill-icons p {
+        .skills .container .skill-icons .icon-container p {
           opacity: 1;
           margin: 0px 30px 30px 30px;
           border: 10px solid darkorange;
           border-radius: 0px 0px 5px 5px;
           background-color: darkorange;
           text-align: center; } }
+    .skills .container .skill-icons .icon-container:hover p {
+      opacity: 1 !important;
+      margin: 0px 30px 30px 30px;
+      border: 10px solid darkorange;
+      border-radius: 0px 0px 5px 5px;
+      background-color: darkorange;
+      text-align: center; }
 
 .experience .container {
   background-color: #989898;
