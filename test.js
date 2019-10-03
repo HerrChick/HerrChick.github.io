@@ -23,6 +23,7 @@ f.forEach(b =>
     const c=document.getElementById(e.target.hash.substr(1))
 
     c.scrollIntoView({behavior: 'smooth'})
+
   }))
 
 d.addEventListener('click' e =>{
