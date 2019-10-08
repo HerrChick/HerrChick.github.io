@@ -67,6 +67,9 @@ a{
   .container{
     background-color: $primary;
     padding: 14px 100px;
+    @media only screen and (max-width: 768px){
+      padding: 14px 30px;
+    }
     text-align: justify;
   }
 }
@@ -75,6 +78,9 @@ a{
   .container{
     background-color: $secondary;
     padding: 14px 100px;
+    @media only screen and (max-width: 768px){
+      padding: 14px 30px;
+    }
     text-align: justify;
     .skill-icons{
       display: flex;
@@ -119,6 +125,9 @@ a{
   .container{
     background-color: $primary;
     padding: 14px 100px;
+    @media only screen and (max-width: 768px){
+      padding: 14px 30px;
+    }
     text-align: justify;
 
     #projects{
@@ -138,6 +147,9 @@ a{
   .container{
     background-color: $primary;
     padding: 14px 100px;
+    @media only screen and (max-width: 768px){
+      padding: 14px 30px;
+    }
     text-align: justify;
   }
 }
@@ -146,6 +158,9 @@ a{
   .container{
     background-color: $secondary;
     padding: 14px 100px;
+    @media only screen and (max-width: 768px){
+      padding: 14px 30px;
+    }
     text-align: justify;
   }
 }

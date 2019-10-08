@@ -46,11 +46,17 @@ a {
   background-color: #989898;
   padding: 14px 100px;
   text-align: justify; }
+  @media only screen and (max-width: 768px) {
+    #about .container {
+      padding: 14px 30px; } }
 
 #skills .container {
   background-color: #4c4c4c;
   padding: 14px 100px;
   text-align: justify; }
+  @media only screen and (max-width: 768px) {
+    #skills .container {
+      padding: 14px 30px; } }
   #skills .container .skill-icons {
     display: flex;
     flex-wrap: wrap;
@@ -84,6 +90,9 @@ a {
   background-color: #989898;
   padding: 14px 100px;
   text-align: justify; }
+  @media only screen and (max-width: 768px) {
+    #experience .container {
+      padding: 14px 30px; } }
   #experience .container #projects {
     display: flex;
     flex-wrap: wrap; }
@@ -96,11 +105,17 @@ a {
   background-color: #989898;
   padding: 14px 100px;
   text-align: justify; }
+  @media only screen and (max-width: 768px) {
+    #hobbies .container {
+      padding: 14px 30px; } }
 
 #education .container {
   background-color: #4c4c4c;
   padding: 14px 100px;
   text-align: justify; }
+  @media only screen and (max-width: 768px) {
+    #education .container {
+      padding: 14px 30px; } }
 
 @media only screen and (max-width: 768px) {
   nav #nav-links {
