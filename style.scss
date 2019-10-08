@@ -12,6 +12,7 @@ $textcolor: #fafafa;
 
 body{
   font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
   color: $textcolor;
   text-decoration: none;
   background-color: #fafafa;
@@ -37,6 +38,11 @@ nav{
     background-color: $secondary;
     }
   }
+}
+
+ul{
+  margin: 0px;
+  padding: 14px;
 }
 
 a{
@@ -87,6 +93,7 @@ a{
       flex-wrap: wrap;
       justify-content: space-evenly;
       .icon-container{
+        height: 150px;
         i{
           border: 5px solid darkorange;
           background-color: darkorange;
@@ -133,10 +140,45 @@ a{
     #projects{
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
       .project-container{
-        width: 50%;
-        img{
-          width: 70%;
+        box-shadow: 2px 3px 4px -1px rgba(102,54,0,0.61);
+        border: 20px solid darkorange;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        background-color: darkorange;
+        width: 40%;
+        .imgcontainer{
+          text-align: center;
+          img{
+            width: 90%;
+          }
+        }
+        h4{
+          margin: 10px 0px 10px 0px;
+        }
+        ul{
+          margin: 0px;
+          padding: 14px;
+        }
+      }
+      @media only screen and (max-width: 768px){
+        .project-container{
+          box-shadow: 2px 3px 4px -1px rgba(102,54,0,0.61);
+          border: 20px solid darkorange;
+          border-radius: 5px;
+          margin-bottom: 30px;
+          background-color: darkorange;
+          width: 90%;
+          .imgcontainer{
+            text-align: center;
+            img{
+              width: 90%;
+            }
+          }
+          h4{
+            margin: 10px 0px 10px 0px;
+          }
         }
       }
     }

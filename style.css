@@ -5,6 +5,7 @@ html {
 /* VARS */
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
   color: #fafafa;
   text-decoration: none;
   background-color: #fafafa;
@@ -22,6 +23,10 @@ nav {
     padding: 14px 16px; }
   nav #nav-links a:hover {
     background-color: #4c4c4c; }
+
+ul {
+  margin: 0px;
+  padding: 14px; }
 
 a {
   text-decoration: none;
@@ -61,23 +66,25 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; }
-    #skills .container .skill-icons .icon-container i {
-      border: 5px solid darkorange;
-      background-color: darkorange;
-      border-radius: 5px;
-      text-align: center;
-      font-size: 100px;
-      margin: 14px 30px; }
-    #skills .container .skill-icons .icon-container p {
-      opacity: 0; }
-      @media only screen and (max-width: 768px) {
-        #skills .container .skill-icons .icon-container p {
-          opacity: 1;
-          margin: 0px 30px 30px 30px;
-          border: 10px solid darkorange;
-          border-radius: 0px 0px 5px 5px;
-          background-color: darkorange;
-          text-align: center; } }
+    #skills .container .skill-icons .icon-container {
+      height: 150px; }
+      #skills .container .skill-icons .icon-container i {
+        border: 5px solid darkorange;
+        background-color: darkorange;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 100px;
+        margin: 14px 30px; }
+      #skills .container .skill-icons .icon-container p {
+        opacity: 0; }
+        @media only screen and (max-width: 768px) {
+          #skills .container .skill-icons .icon-container p {
+            opacity: 1;
+            margin: 0px 30px 30px 30px;
+            border: 10px solid darkorange;
+            border-radius: 0px 0px 5px 5px;
+            background-color: darkorange;
+            text-align: center; } }
     #skills .container .skill-icons .icon-container:hover p {
       opacity: 1 !important;
       margin: 0px 30px 30px 30px;
@@ -95,11 +102,38 @@ a {
       padding: 14px 30px; } }
   #experience .container #projects {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: space-between; }
     #experience .container #projects .project-container {
-      width: 50%; }
-      #experience .container #projects .project-container img {
-        width: 70%; }
+      box-shadow: 2px 3px 4px -1px rgba(102, 54, 0, 0.61);
+      border: 20px solid darkorange;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      background-color: darkorange;
+      width: 40%; }
+      #experience .container #projects .project-container .imgcontainer {
+        text-align: center; }
+        #experience .container #projects .project-container .imgcontainer img {
+          width: 90%; }
+      #experience .container #projects .project-container h4 {
+        margin: 10px 0px 10px 0px; }
+      #experience .container #projects .project-container ul {
+        margin: 0px;
+        padding: 14px; }
+    @media only screen and (max-width: 768px) {
+      #experience .container #projects .project-container {
+        box-shadow: 2px 3px 4px -1px rgba(102, 54, 0, 0.61);
+        border: 20px solid darkorange;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        background-color: darkorange;
+        width: 90%; }
+        #experience .container #projects .project-container .imgcontainer {
+          text-align: center; }
+          #experience .container #projects .project-container .imgcontainer img {
+            width: 90%; }
+        #experience .container #projects .project-container h4 {
+          margin: 10px 0px 10px 0px; } }
 
 #hobbies .container {
   background-color: #989898;
