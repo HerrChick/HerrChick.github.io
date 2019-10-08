@@ -66,7 +66,7 @@ a{
 #about{
   .container{
     background-color: $primary;
-    padding: 14px 30px;
+    padding: 14px 100px;
     text-align: justify;
   }
 }
@@ -74,7 +74,7 @@ a{
 #skills{
   .container{
     background-color: $secondary;
-    padding: 14px 30px;
+    padding: 14px 100px;
     text-align: justify;
     .skill-icons{
       display: flex;
@@ -118,23 +118,34 @@ a{
 #experience{
   .container{
     background-color: $primary;
-    padding: 14px 30px;
+    padding: 14px 100px;
     text-align: justify;
+
+    #projects{
+      display: flex;
+      flex-wrap: wrap;
+      .project-container{
+        width: 50%;
+        img{
+          width: 70%;
+        }
+      }
+    }
   }
 }
 
 #hobbies{
   .container{
-    background-color: $secondary;
-    padding: 14px 30px;
+    background-color: $primary;
+    padding: 14px 100px;
     text-align: justify;
   }
 }
 
 #education{
   .container{
-    background-color: $primary;
-    padding: 14px 30px;
+    background-color: $secondary;
+    padding: 14px 100px;
     text-align: justify;
   }
 }

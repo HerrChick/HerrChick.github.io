@@ -44,12 +44,12 @@ a {
 
 #about .container {
   background-color: #989898;
-  padding: 14px 30px;
+  padding: 14px 100px;
   text-align: justify; }
 
 #skills .container {
   background-color: #4c4c4c;
-  padding: 14px 30px;
+  padding: 14px 100px;
   text-align: justify; }
   #skills .container .skill-icons {
     display: flex;
@@ -82,17 +82,24 @@ a {
 
 #experience .container {
   background-color: #989898;
-  padding: 14px 30px;
+  padding: 14px 100px;
   text-align: justify; }
+  #experience .container #projects {
+    display: flex;
+    flex-wrap: wrap; }
+    #experience .container #projects .project-container {
+      width: 50%; }
+      #experience .container #projects .project-container img {
+        width: 70%; }
 
 #hobbies .container {
-  background-color: #4c4c4c;
-  padding: 14px 30px;
+  background-color: #989898;
+  padding: 14px 100px;
   text-align: justify; }
 
 #education .container {
-  background-color: #989898;
-  padding: 14px 30px;
+  background-color: #4c4c4c;
+  padding: 14px 100px;
   text-align: justify; }
 
 @media only screen and (max-width: 768px) {
