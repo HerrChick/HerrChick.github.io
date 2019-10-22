@@ -95,21 +95,23 @@ a {
 
 #experience .container {
   background-color: #989898;
-  padding: 14px 100px;
-  text-align: justify; }
+  padding: 14px 100px; }
   @media only screen and (max-width: 768px) {
     #experience .container {
       padding: 14px 30px; } }
   #experience .container #projects {
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
     #experience .container #projects .project-container {
+      text-align: justify;
       box-shadow: 2px 3px 4px -1px rgba(102, 54, 0, 0.61);
       border: 20px solid darkorange;
       border-radius: 5px;
       margin-bottom: 30px;
       background-color: darkorange;
+      height: 460px;
       width: 40%; }
       #experience .container #projects .project-container .imgcontainer {
         text-align: center; }
@@ -127,6 +129,7 @@ a {
         border-radius: 5px;
         margin-bottom: 30px;
         background-color: darkorange;
+        height: auto;
         width: 90%; }
         #experience .container #projects .project-container .imgcontainer {
           text-align: center; }
